@@ -1589,6 +1589,16 @@
             "rid": "win"
           }
         }
+      },
+      "Digesett.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Digesett.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Digesett.Shared.dll": {}
+        }
       }
     }
   },
@@ -4531,10 +4541,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Digesett.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Digesett.Shared/Digesett.Shared.csproj",
+      "msbuildProject": "../Digesett.Shared/Digesett.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Digesett.Shared >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
@@ -4573,7 +4589,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Shared\\Digesett.Shared.csproj": {
+              "projectPath": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Shared\\Digesett.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

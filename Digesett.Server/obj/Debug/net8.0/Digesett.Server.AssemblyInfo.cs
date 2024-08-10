@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digesett.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6fa300139b47abd31835fce7c3996d4e2950e07")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digesett.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digesett.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

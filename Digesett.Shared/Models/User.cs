@@ -11,10 +11,12 @@ namespace Digesett.Shared.Models
         [Required]
         public string Email { get; set; } = null!;
         [Required]
+        public string Password { get; set; } = null!;
+        [Required]
         public string TypeUser { get; set; } = null!;
         [Required]
-        public string Cargo { get; set; } = null!;
         public string Departament { get; set; } = null!;
+        public string Cargo { get; set; } = null!;
         public string Phone { get; set; } = null!;
         public bool Active { get; set; }
     }

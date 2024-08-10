@@ -1029,3 +1029,13 @@ E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\Di
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\refint\Digesett.Frontend.dll
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\Digesett.Frontend.pdb
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\ref\Digesett.Frontend.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\Digesett.Frontend.sourcelink.json
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\Digesett.Shared.pdb
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\Digesett.Shared.wasm
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\Digesett.Shared.pdb.gz
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\Digesett.Shared.wasm.gz
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\Digesett.Shared.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\Digesett.Shared.pdb
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\webcil\Digesett.Shared.wasm
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\zsa62uvrvo.gz
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\8fwzrvtakl.gz

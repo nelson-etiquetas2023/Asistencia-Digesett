@@ -1,0 +1,11 @@
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\bin\Debug\net8.0\Digesett.Shared.deps.json
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\bin\Debug\net8.0\Digesett.Shared.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\bin\Debug\net8.0\Digesett.Shared.pdb
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.AssemblyInfoInputs.cache
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.AssemblyInfo.cs
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.csproj.CoreCompileInputs.cache
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\refint\Digesett.Shared.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\Digesett.Shared.pdb
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Shared\obj\Debug\net8.0\ref\Digesett.Shared.dll

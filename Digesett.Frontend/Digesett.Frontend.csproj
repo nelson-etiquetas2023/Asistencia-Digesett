@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Digesett.Shared\Digesett.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\ModulosJS\" />
+  </ItemGroup>
+
 </Project>

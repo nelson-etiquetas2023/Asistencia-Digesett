@@ -2,6 +2,7 @@
 @using Digesett.Shared.Models
 @using System.Diagnostics
 @using System.Text.Json
+@inject IJSRuntime JSRuntime
 
 
 
@@ -16,7 +17,7 @@
 
 
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped" id="TableUsers">
     <thead>
         <tr>
             <td>Id.</td>
@@ -62,21 +63,25 @@
     </tbody>
 </table>
 
+
+
 @code {
 
     public List<User>? users { get; set; } = null!;
     public bool isLoading;
 
-    
 
-    protected override void OnInitialized()
+
+
+    protected override async Task OnInitializedAsync()
     {
-        users = new List<User>();
-        
+        users = await LoadData();
+        await JSRuntime.InvokeAsync<object>("DataTablesUsers", "#TableUsers");
+
     }
 
 
-    public async Task LoadData()
+    public async Task<List<User>> LoadData()
     {
         isLoading = true;
         var watch = Stopwatch.StartNew();
@@ -90,5 +95,6 @@
         }
         watch.Stop();
         isLoading = false;
+        return users;
     }
 }

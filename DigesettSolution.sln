@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digesett.Frontend", "Digesett.Frontend\Digesett.Frontend.csproj", "{A508E3D8-818E-481C-9609-3B0A3767B581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digesett.Frontend", "Digesett.Frontend\Digesett.Frontend.csproj", "{A508E3D8-818E-481C-9609-3B0A3767B581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digesett.Shared", "Digesett.Shared\Digesett.Shared.csproj", "{CB75E666-3733-4179-8DF4-12D5BDF4EF8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digesett.Shared", "Digesett.Shared\Digesett.Shared.csproj", "{CB75E666-3733-4179-8DF4-12D5BDF4EF8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digesett.Server", "Digesett.Server\Digesett.Server.csproj", "{F60C44DA-50D5-462C-9527-F29B949F869A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digesett.Server", "Digesett.Server\Digesett.Server.csproj", "{F60C44DA-50D5-462C-9527-F29B949F869A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

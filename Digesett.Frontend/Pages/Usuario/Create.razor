@@ -1,0 +1,51 @@
+﻿@page "/usuario/create"
+
+<h3>Crear Usuarios</h3>
+
+<form method="post">
+    <label>Nombre de Usuario:</label>
+    <input type="text" class="form-control" />
+    
+    <label>Correo</label>
+    <input type="email" class="form-control" />
+
+    <label>Contraseña:</label>
+    <input type="password" class="form-control" />
+
+    <label>Departamento:</label>
+    <select class="form-select">
+        <option value="">Seleccione un Departamento:</option>
+        <option value="1">Sistemas</option>
+        <option value="2">Almacen</option>
+        <option value="3">Recursos Humanos</option>
+    </select>
+
+    <label>Cargo:</label>
+    <input type="text" class="form-control" />
+
+
+    <label>Tipo de Usuario:</label>
+    <select class="form-select">
+        <option value="">Seleccione un tipo:</option>
+        <option value="1">Super Admin</option>
+        <option value="2">Admin</option>
+        <option value="3">User</option>
+        <option value="4">Invitado</option>
+    </select>
+
+    <label>Telefono:</label>
+    <input type="text" class="form-control" />
+
+
+    <a href="#" class="btn btn-primary">Guardar</a>
+    <a href="#" class="btn btn-primary">Volver</a>
+
+
+
+</form>
+
+
+
+@code {
+
+}

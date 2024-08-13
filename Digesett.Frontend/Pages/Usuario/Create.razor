@@ -1,64 +1,63 @@
 ﻿@page "/usuario/create"
+@using Digesett.Shared.Models
 @inject SweetAlertService Swal
+@inject HttpClient Client
+
+
 
 <h3>Crear Usuarios</h3>
 
-<button class="btn btn-primary" @onclick="@(async () => await Swal.FireAsync("probar sweet alert 2"))">Sweet Alert 2</button>
-
+<button class="btn btn-primary mb-5">Sweet Alert 2</button>
 
 <div class="row">
     <div class="col-6">
-        <form>
+        <form method="post">
             <div class="form-group mb-3">
-                <label>Nombre de Usuario:</label>
-                <input type="text" class="form-control shadow" placeholder="Introduzca el nombre del usuario" id="name" />
+                <label class="fw-bold">Nombre de Usuario:</label>
+                <input type="text" @bind-value="user.Name" class="form-control shadow" placeholder="Introduzca el nombre del usuario" id="name" />
             </div>
             <div class="form-group mb-3">
-                <label>Correo</label>
-                <input type="email" class="form-control shadow" placeholder="Introduzca el correo electronico" id="email" />
+                <label class="fw-bold">Correo</label>
+                <input type="email" @bind-value="user.Email" class="form-control shadow" placeholder="Introduzca el correo electronico" id="email" />
             </div>
             <div class="form-group mb-3">
-                <label>Contraseña:</label>
-                <input type="password" class="form-control shadow" placeholder="Introduzca a contraseña del usuario" id="password"  />
+                <label class="fw-bold">Contraseña:</label>
+                <input type="password" @bind-value="user.Password" class="form-control shadow" placeholder="Introduzca a contraseña del usuario" id="password"  />
             </div>
             <div class="form-group mb-3">
-                <label>Departamento:</label>
-                <select class="form-select shadow">
-                    <option value="">Seleccione un Departamento:</option>
-                    <option value="1">Sistemas</option>
-                    <option value="2">Almacen</option>
-                    <option value="3">Recursos Humanos</option>
-                </select>
+                <label class="fw-bold">Departamento:</label>
+                <InputSelect class="form-select shadow" @bind-Value="user.Departament">
+                    <option value="" selected>Seleccione un departamento</option>
+                    @foreach (var item in departaments)
+                    {
+                        <option value="@item.Name">@item.Name</option>
+                    }
+                </InputSelect>
             </div>
             <div class="form-group mb-3">
-                <label>Cargo:</label>
-                <input type="text" class="form-control shadow" placeholder="Introduzca el cargo de trabajo" id="cargo" />
+                <label class="fw-bold">Cargo:</label>
+                <input type="text" @bind-value="user.Cargo"  class="form-control shadow" placeholder="Introduzca el cargo de trabajo" id="cargo" />
             </div>
             <div class="form-group mb-3">
-                <label>Tipo de Usuario:</label>
-                <select class="form-select shadow">
-                    <option value="">Seleccione un tipo:</option>
-                    <option value="1">Super Admin</option>
-                    <option value="2">Admin</option>
-                    <option value="3">User</option>
-                    <option value="4">Invitado</option>
-                </select>
+                <InputSelect class="form-select shadow" @bind-Value="user.TypeUser">
+                    <option value="" selected>Seleccione el Tipo de Usuario</option>
+                    @foreach (var item in TiposUsuario)
+                    {
+                        <option value="@item.Name">@item.Name</option>
+                    }
+                </InputSelect>
             </div>
             <div class="form-group mb-3">
-                <label>Telefono:</label>
-                <input type="text" class="form-control shadow" placeholder="Introduzca el numero telefonico" id="telefono" />
+                <label class="fw-bold">Telefono:</label>
+                <input type="text" @bind-value="user.Phone" class="form-control shadow" placeholder="Introduzca el numero telefonico" id="telefono" />
             </div>
-
-
-
             <div class="row mt-5" style="display:flex;align-content:center;align-items:center;">
                 <div class="col-6">
                     
-                    <button class="btn btn-primary" @onclick="@(async () => await Swal.FireAsync("click en el boton salvar"))">Guardar</button>
+                    <button class="btn btn-primary" type="submit" @onclick="SaveUsers">Guardar</button>
                     <a href="#" class="btn btn-primary">Volver</a>
                 </div>
             </div>
-
         </form>
     </div>
 </div>
@@ -71,10 +70,82 @@
 
 @code {
 
+    public User user { get; set; } = new();
+    public List<Departament> departaments = new(){
+            new Departament(){ Id=1,Name="Sistemas"},
+            new Departament(){ Id=2,Name="Recursos Humanos"},
+            new Departament(){ Id=3,Name="Gerencia"}
+        };
+    public List<TypeUser> TiposUsuario = new(){
+            new TypeUser(){ Id=1,Name="Super Admin"},
+            new TypeUser(){ Id=2,Name="Admin"},
+            new TypeUser(){ Id=3,Name="User"},
+            new TypeUser(){ Id=4,Name="Invitado"}
+        };
 
-    public void SaveUsers()
+    public async void SaveUsers()
     {
+
+        var url = "http://localhost:5002/api/Users";
+
+
+
+        try
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsJsonAsync<User>("http://localhost:5002/api/Users", user);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var cuerpo = await response.Content.ReadAsStringAsync();
+                    await Swal.FireAsync(
+                    "Crear Usuario",
+                    cuerpo,
+                    SweetAlertIcon.Success);
+                }
+
+            }
+        }
+        catch(Exception ex)
+        {
+            await Swal.FireAsync(
+            "error",
+            ex.Message,
+            SweetAlertIcon.Error);
         
+        }
+
+        
+        
+            
+             
+            
+            
+            
+        
+
+            
+   
+       
     }
 
+    public void LoadDataComboBox()
+    {
+
+        departaments = new()
+        {
+            new Departament(){ Id=1,Name="Sistemas"},
+            new Departament(){ Id=2,Name="Recursos Humanos"},
+            new Departament(){ Id=3,Name="Gerencia"}
+        };
+
+        TiposUsuario = new()
+        {
+            new TypeUser(){ Id=1,Name="Super Admin"},
+            new TypeUser(){ Id=2,Name="Admin"},
+            new TypeUser(){ Id=3,Name="User"},
+            new TypeUser(){ Id=4,Name="Invitado"}
+        };
+    }
 }

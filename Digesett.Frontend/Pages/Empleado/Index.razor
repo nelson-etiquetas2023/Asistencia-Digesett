@@ -1,7 +1,90 @@
 ﻿@page "/empleado/index"
+@using Digesett.Shared.Models
+@using System.Text.Json
+@inject SweetAlertService Swal
+@inject HttpClient httpClient
+@inject IJSRuntime JSRuntime
 
-<h3>Index de empleados</h3>
+<h3>Listado de empleados de la Nomina de la Digesett</h3>
+
+<button class="btn btn-primary mb-5 mt-2" @onclick="LoadData">Load Data</button>
+
+<body onbeforeunload="TestDataTablesRemove('#tableEmployee')">
+    @if (empleados == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped table-sm shadow" id="tableEmployee">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Empleado</th>
+                    <th>Direccion</th>
+                    <th>Correo</th>
+                    <th>Departamento</th>
+                    <th>Cargo</th>
+                    <th>Telefono</th>
+                    <th>Salario</th>
+                    <th>Sexo</th>
+                    @* <th>Nacimiento</th> *@
+                    @* <th>Activo</th> *@
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in empleados)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Direction</td>
+                        <td>@item.Email</td>
+                        <td>@item.Departament</td>
+                        <td>@item.Cargo</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.Salary</td>
+                        <td>@(item.Sexo ? "hombre" : "mujer")</td>
+                        @* <td>@item.BirthDate.ToShortDateString()</td> *@
+                        @* <td>@(item.Active ? "Activo" : "Desactivado")</td> *@
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+
+    }
+</body>
+
+
+
 
 @code {
+    public static List<Employee>? empleados;
 
+
+    protected override async Task OnInitializedAsync()
+    {
+        empleados = await LoadData();
+        await JSRuntime.InvokeAsync<object>("DTemployee", "#tableEmployee");
+    }
+
+    
+
+
+
+    private async Task<List<Employee>> LoadData()
+    {
+
+        var url = $"http://localhost:5002/Api/Employee";
+        using (httpClient = new HttpClient())
+        {
+            var respuesta = await httpClient.GetAsync(url);
+            var respuestaString = await respuesta.Content.ReadAsStringAsync();
+            var lista = JsonSerializer.Deserialize<List<Employee>>(respuestaString, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+            return lista;
+        }
+        
+    }
 }

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Digesett.Frontend",
   "resources": {
-    "hash": "sha256-QH1ds3Lj5YTukxY85ivUOW3Z0GPeFxVbELX1i0Bl3Ts=",
+    "hash": "sha256-fDjYvBONI2aN2aj057txyawW16MHb6WRW2QD1t7rBoI=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.y5kanstr8i.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
@@ -209,12 +209,12 @@
       "mscorlib.wasm": "sha256-fLbZiSHBNdpHoh4EgRqMaNP5NQyIK5TEj6AXFLqo8m8=",
       "netstandard.wasm": "sha256-d4xbAE8qrKq5euUoZHPO+jkYPjlCYBzUew45MKsYKic=",
       "System.Private.CoreLib.wasm": "sha256-8yi6NcX1lkNQgV4WKjnMBYIZyKh4P+OXnXVQmgxGZD4=",
-      "Digesett.Shared.wasm": "sha256-PofhxGZsyVxiYye9fMZc7Tw5kF0OxRNK2yVjIE0XYTw=",
-      "Digesett.Frontend.wasm": "sha256-Htl9SfEkAhFM6NpQvyBe76ZlwIETalf9afc4aL/X7Gs="
+      "Digesett.Shared.wasm": "sha256-xGMdAEvMU2XJUAxC+HTFXj2pHAo8b8DlpE95UJII5sY=",
+      "Digesett.Frontend.wasm": "sha256-kbVD4bKS+mdOXsVghsbxSeMq6d1XvTLYX6otXrouh4M="
     },
     "pdb": {
-      "Digesett.Shared.pdb": "sha256-HcCc/lIeOZSc4/fnjjQEKgI+O01R5AO8Qi31deBeB9M=",
-      "Digesett.Frontend.pdb": "sha256-uDXjanEn7dfagVnIiLrcc07jkyJsdq/Sgw3lz1wNNNk="
+      "Digesett.Shared.pdb": "sha256-mXKJ7GoaMZc6/cewU3S8cPylUGhl92MrW+ZSzwMFD2Q=",
+      "Digesett.Frontend.pdb": "sha256-PRoMaQQgyE5SYY+j0m1izeIuu5vhwFizGjVRS+o6Ueg="
     }
   },
   "cacheBootResources": true,

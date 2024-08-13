@@ -1,5 +1,7 @@
 ﻿using Digesett.Server.Data;
+using Digesett.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 namespace Digesett.Server.Controllers
@@ -13,6 +15,14 @@ namespace Digesett.Server.Controllers
         {
             _context = context;
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AddUSer(User user) 
+        {
+            _context.User.Add(user);
+            await _context.SaveChangesAsync();
+            return Ok(user);
+        } 
 
         [HttpGet]
         public async Task<IActionResult> GetUser() 

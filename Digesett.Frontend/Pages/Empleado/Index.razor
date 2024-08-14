@@ -3,13 +3,14 @@
 @using System.Text.Json
 @inject SweetAlertService Swal
 @inject HttpClient httpClient
-@inject IJSRuntime JSRuntime
+@inject IJSRuntime JS
+@implements IAsyncDisposable
 
 <h3>Listado de empleados de la Nomina de la Digesett</h3>
 
 <button class="btn btn-primary mb-5 mt-2" @onclick="LoadData">Load Data</button>
 
-<body onbeforeunload="TestDataTablesRemove('#tableEmployee')">
+<body onbeforeunload="() => $('#tableEmployee').DataTable().destroy();">
     @if (empleados == null)
     {
         <p>Loading...</p>
@@ -67,13 +68,14 @@
     protected override async Task OnInitializedAsync()
     {
         empleados = await LoadData();
-        await JSRuntime.InvokeAsync<object>("DTemployee", "#tableEmployee");
+        await JS.InvokeAsync<object>("DataTableLoad", "#tableEmployee");
     }
 
+    public async ValueTask DisposeAsync()
+    {
+        await JS.InvokeAsync<object>("DataTableUnload", "#tableEmployee");
+    }
     
-
-
-
     private async Task<List<Employee>> LoadData()
     {
 

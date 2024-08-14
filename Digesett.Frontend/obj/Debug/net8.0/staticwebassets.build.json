@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yaEM/0hIi5VyRRb/LAVLrf6ueqUsjvH577yisU2XoSA=",
+  "Hash": "t9Bs3DfIQMzzSa67Lx774KArHj9tID9/62g3JdEJArc=",
   "Source": "Digesett.Frontend",
   "BasePath": "/",
   "Mode": "Root",
@@ -812,7 +812,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -831,15 +831,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.7.y5kanstr8i.js",
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.gb8ukpdi7w.js",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
       "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.7.y5kanstr8i.js",
+      "RelativePath": "_framework/dotnet.native.8.0.8.gb8ukpdi7w.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -850,7 +850,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -869,15 +869,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.7.3znuc7xrlc.js",
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.7bw1860ufc.js",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
       "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.7.3znuc7xrlc.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.8.7bw1860ufc.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -888,7 +888,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -907,7 +907,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -926,7 +926,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -945,7 +945,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -964,7 +964,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.7\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\siste\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.8\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -4881,6 +4881,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.FileSystem.Primitives.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\20sfpmrlv6.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\2czon79h29.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -5031,25 +5050,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.FileSystem.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\3znuc7xrlc.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.7.3znuc7xrlc.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.7.3znuc7xrlc.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.7.3znuc7xrlc.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\46l2k1ywth.gz",
@@ -5527,6 +5527,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\7bw1860ufc.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.8.7bw1860ufc.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.7bw1860ufc.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.8.7bw1860ufc.js"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\7fwnj9yy7s.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -5907,6 +5926,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\bejk02ff19.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\bw7iol7la3.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -6019,25 +6057,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.Metadata.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\cyveguk9p5.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\d11uswc2wg.gz",
@@ -6268,6 +6287,44 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\fdicdmacxu.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
+    },
+    {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\fj5cxz2rjc.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\fveyapdap7.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -6323,6 +6380,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.InteropServices.wasm"
+    },
+    {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\gb8ukpdi7w.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.8.gb8ukpdi7w.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.gb8ukpdi7w.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.8.gb8ukpdi7w.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\gemq9kka8x.gz",
@@ -6610,25 +6686,6 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Serialization.wasm"
     },
     {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\j9kih1ptrl.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
-    },
-    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\jj4ooqie1p.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -6684,25 +6741,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Xml.XmlDocument.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\jnukz5ysrd.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\jqauc68p2o.gz",
@@ -6876,25 +6914,6 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.wasm"
     },
     {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\ks32pkks2x.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
-    },
-    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\kzpi28b3ev.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -6931,25 +6950,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\l5g6vz3nxd.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\lj9uaoi8xx.gz",
@@ -7178,25 +7178,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Xml.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\npaqugmvgd.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\nr5zz2q0s9.gz",
@@ -7617,6 +7598,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Collections.Immutable.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\r977bidgop.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\rjhfyyg5pj.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -7691,25 +7691,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\s1ugb5mmmz.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\s2w3z154fb.gz",
@@ -7864,6 +7845,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ObjectModel.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\tvced411ot.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\twltgpmh83.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -7881,6 +7881,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Expressions.wasm"
+    },
+    {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\u83fafuc93.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\uhxhb6yqyu.gz",
@@ -8318,25 +8337,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.wasm"
-    },
-    {
-      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\y5kanstr8i.gz",
-      "SourceId": "Digesett.Frontend",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.7.y5kanstr8i.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.7.y5kanstr8i.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.7.y5kanstr8i.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\yh3q6zdz6b.gz",

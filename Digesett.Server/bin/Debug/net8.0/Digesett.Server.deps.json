@@ -857,7 +857,10 @@
       "System.Threading.Tasks.Extensions/4.5.4": {},
       "Digesett.Shared/1.0.0": {
         "runtime": {
-          "Digesett.Shared.dll": {}
+          "Digesett.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

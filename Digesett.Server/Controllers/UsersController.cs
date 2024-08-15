@@ -19,7 +19,7 @@ namespace Digesett.Server.Controllers
         [HttpPost]
         public async Task<IActionResult> AddUSer(User user) 
         {
-            _context.User.Add(user);
+            _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return Ok(user);
         } 
@@ -27,14 +27,14 @@ namespace Digesett.Server.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUser() 
         {
-            var users = await _context.User.ToListAsync();
+            var users = await _context.Users.ToListAsync();
             return Ok(users);
         }
 
         [HttpGet("{id:int}")]
         public IActionResult GetUsersById(int id) 
         {
-            var user = _context.User.Where(u => u.Id == id);
+            var user = _context.Users.Where(u => u.Id == id);
             return Ok(user);
         } 
     }

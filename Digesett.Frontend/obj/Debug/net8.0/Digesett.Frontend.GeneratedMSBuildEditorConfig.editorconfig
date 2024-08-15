@@ -30,8 +30,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpc3RlbmNpYVxJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcQ3JlYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcRGVsZXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcVXBkYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Empleado/Index.razor]

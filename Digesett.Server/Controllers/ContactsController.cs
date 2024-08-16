@@ -22,7 +22,8 @@ namespace Digesett.Server.Controllers
         [HttpPost]
         public async Task<ActionResult> AddContact(Contact Contacto) 
         {
-            var addItem = await Context.Contacts.AddAsync(Contacto);
+            Contacto.Active = true;
+            await Context.Contacts.AddAsync(Contacto);
             await Context.SaveChangesAsync();
             return Ok();
         }
@@ -37,5 +38,26 @@ namespace Digesett.Server.Controllers
             }
             return Ok(contact);
         }
+
+        [HttpPost("{id:int}")]
+        public async Task<ActionResult<Contact>> UpdateContacts(int id, Contact editarcontacto) 
+        {
+            var contactdb = await Context.Contacts.FindAsync(id);
+            if (contactdb is null) 
+            {
+                return NotFound("contacto a modificar no encontrdo");
+            }
+            contactdb.Name = editarcontacto.Name;
+            contactdb.Departamento = editarcontacto.Departamento;
+            contactdb.Cargo = editarcontacto.Cargo;
+            contactdb.Correo = editarcontacto.Correo;
+            contactdb.Active = editarcontacto.Active;
+            await Context.SaveChangesAsync();
+            return Ok(contactdb);
+        }
+
+
+
+
     }
 }

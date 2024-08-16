@@ -13,7 +13,7 @@ namespace Digesett.Shared.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; } = null!;
-        public string Cargo{ get; set; } = null!;
+        public string Cargo { get; set; } = null!;
         public string Departamento { get; set; } = null!;
         [Required]
         public string Correo { get; set; } = null!;

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Digesett.Shared")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Digesett.Server")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+926da9e130a2143ea424310297e2b24fbfeae90c")]
-[assembly: System.Reflection.AssemblyProductAttribute("Digesett.Shared")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Digesett.Shared")]
+[assembly: System.Reflection.AssemblyProductAttribute("Digesett.Server")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Digesett.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

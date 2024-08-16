@@ -2,6 +2,7 @@
 using Digesett.Shared.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 namespace Digesett.Server.Controllers
@@ -56,8 +57,17 @@ namespace Digesett.Server.Controllers
             return Ok(contactdb);
         }
 
-
-
-
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> DeleteContacts(int id) 
+        {
+            var item = await Context.Contacts.FindAsync(id);
+            if (item is null) 
+            {
+                return NotFound("contacto no encontrado...");
+            }
+            Context.Remove(item);
+            await Context.SaveChangesAsync();
+            return Ok(item);
+        }
     }
 }

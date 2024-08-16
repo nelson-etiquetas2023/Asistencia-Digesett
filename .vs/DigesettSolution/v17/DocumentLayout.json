@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.frontend\\pages\\contacts\\update.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|solutionrelative:digesett.frontend\\pages\\contacts\\update.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB75E666-3733-4179-8DF4-12D5BDF4EF8A}|Digesett.Shared\\Digesett.Shared.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.shared\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB75E666-3733-4179-8DF4-12D5BDF4EF8A}|Digesett.Shared\\Digesett.Shared.csproj|solutionrelative:digesett.shared\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,11 +26,37 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Shared\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Digesett.Shared\\Models\\Contact.cs",
+              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Shared\\Models\\Contact.cs",
+              "RelativeToolTip": "Digesett.Shared\\Models\\Contact.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T20:14:17.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Update.razor",
+              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Contacts\\Update.razor",
+              "RelativeDocumentMoniker": "Digesett.Frontend\\Pages\\Contacts\\Update.razor",
+              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Contacts\\Update.razor",
+              "RelativeToolTip": "Digesett.Frontend\\Pages\\Contacts\\Update.razor",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T12:29:34.185Z",
+              "EditorCaption": ""
             }
           ]
         },

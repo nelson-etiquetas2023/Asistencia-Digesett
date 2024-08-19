@@ -70,12 +70,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xDcmVhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Usuario/Delete.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xEZWxldGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Usuario/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Usuario/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xUYWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Usuario/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb1xVcGRhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/_Imports.razor]

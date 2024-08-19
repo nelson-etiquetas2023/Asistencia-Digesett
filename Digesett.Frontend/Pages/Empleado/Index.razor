@@ -75,7 +75,7 @@
     {
         await JS.InvokeAsync<object>("DataTableUnload", "#tableEmployee");
     }
-    
+
     private async Task<List<Employee>> LoadData()
     {
 
@@ -85,8 +85,14 @@
             var respuesta = await httpClient.GetAsync(url);
             var respuestaString = await respuesta.Content.ReadAsStringAsync();
             var lista = JsonSerializer.Deserialize<List<Employee>>(respuestaString, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-            return lista;
+            if (lista is not null)
+            {
+                return lista;
+            }
+            else
+            {
+                return new List<Employee>();    
+            }
         }
-        
     }
 }

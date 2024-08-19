@@ -194,7 +194,7 @@
     "ContainingType": "Digesett.Server.Controllers.UsersController",
     "Method": "UpdateUsers",
     "RelativePath": "api/Users/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [

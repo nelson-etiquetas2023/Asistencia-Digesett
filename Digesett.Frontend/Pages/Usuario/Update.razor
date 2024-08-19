@@ -1,0 +1,152 @@
+﻿@page "/usuario/update/{id:int}"
+@using Digesett.Shared.Models
+@using System.Text.Json
+@inject HttpClient httpClient
+@inject SweetAlertService Swal
+@inject NavigationManager navigator
+
+<h3>Modificación de Usuario</h3>
+
+
+@if (@user is null)
+{
+    <p>loading...</p>
+}
+else
+{
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group mb-3">
+                <label>Id :</label>
+                <input type="text" class="form-control shadow fw-bold" readonly id="Id" @bind-value="@user.Id" />
+            </div>
+            <div class="form-group mb-3">
+                <label>Nombre del Usuario :</label>
+                <input type="text" class="form-control shadow fw-bold" id="name" @bind-value="@user.Name" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Correo</label>
+                <input type="email" @bind-value="user.Email" class="form-control shadow" id="email" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Contraseña:</label>
+                <input type="password" @bind-value="user.Password" class="form-control shadow" id="password" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Departamento:</label>
+                <InputSelect class="form-select shadow" @bind-Value="@user.Departament">
+                    <option value="" selected>Seleccione un departamento</option>
+                    @foreach (var item in departaments)
+                    {
+                        <option value="@item.Name">@item.Name</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Cargo:</label>
+                <input type="text" @bind-value="user.Cargo" class="form-control shadow" placeholder="Introduzca el cargo de trabajo" id="cargo" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Tipo de Usuario :</label>
+                <InputSelect class="form-select shadow" @bind-Value="user.TypeUser">
+                    <option value="" selected>Seleccione el Tipo de Usuario</option>
+                    @foreach (var item in TiposUsuario)
+                    {
+                        <option value="@item.Name">@item.Name</option>
+                    }
+                </InputSelect>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Telefono:</label>
+                <input type="text" @bind-value="user.Phone" class="form-control shadow" placeholder="Introduzca el numero telefonico" id="telefono" />
+            </div>
+            <div class="form-group mb-3">
+                <InputCheckbox class="form-check-input shadow" @bind-Value="@user.Active" />
+                <label>Contacto Activo</label>
+            </div>
+
+
+
+            <div class="row mt-5" style="display:flex;align-content:center;align-items:center;">
+                <div class="col-6">
+                    <button class="btn btn-primary me-2 shadow" @onclick="SaveUsers">Guardar</button>
+                    <a href="#" class="btn btn-warning shadow">Salir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+@code {
+
+    [Parameter]
+    public int id { get; set; }
+
+    public User user { get; set; } = null!;
+
+    public List<Departament> departaments = new(){
+            new Departament(){ Id=1,Name="Sistemas"},
+            new Departament(){ Id=2,Name="Recursos Humanos"},
+            new Departament(){ Id=3,Name="Gerencia"}
+        };
+
+    public List<TypeUser> TiposUsuario = new(){
+            new TypeUser(){ Id=1,Name="Super Admin"},
+            new TypeUser(){ Id=2,Name="Admin"},
+            new TypeUser(){ Id=3,Name="User"},
+            new TypeUser(){ Id=4,Name="Invitado"}
+        };
+
+
+
+    protected override async Task OnParametersSetAsync()
+    {
+        user = await LoadData();
+    }
+
+    private async Task<User> LoadData()
+    {
+        var url = $"http://localhost:5002/api/users/" + id;
+
+        using (httpClient = new HttpClient())
+        {
+            var respuesta = await httpClient.GetAsync(url);
+            var rptString = await respuesta.Content.ReadAsStringAsync();
+            var item = JsonSerializer.Deserialize<User>(rptString, new JsonSerializerOptions()
+            {
+                PropertyNameCaseInsensitive = true
+            });
+            return (item is not null) ? item : user;
+        }
+    }
+
+    public async Task SaveUsers()
+    {
+
+        using (httpClient = new HttpClient())
+        {
+
+            try
+            {
+                var url = $"http://localhost:5002/api/users/" + id;
+                httpClient.DefaultRequestHeaders.Clear();
+                var respuesta = await httpClient.PostAsJsonAsync<User>(url, user);
+                var rptString = await respuesta.Content.ReadAsStringAsync();
+            }
+            catch (HttpRequestException httpEx)
+            {
+                await Swal.FireAsync("Error", httpEx.Message, SweetAlertIcon.Error);
+            }
+        }
+        navigator.NavigateTo("../usuario/index");
+    }
+
+
+
+
+
+
+}

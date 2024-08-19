@@ -9,13 +9,9 @@ namespace Digesett.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class UsersController(AppDbContext context) : ControllerBase
     {
-        public readonly AppDbContext Context;
-        public UsersController(AppDbContext context)
-        {
-            Context = context;
-        }
+        public readonly AppDbContext Context = context;
 
         [HttpPost]
         public async Task<ActionResult> AddUsers(User user) 
@@ -44,7 +40,7 @@ namespace Digesett.Server.Controllers
             return Ok(user);
         }
 
-        [HttpPut("{id:int}")]
+        [HttpPost("{id:int}")]
         public async Task<ActionResult<User>> UpdateUsers(int id, User user) 
         {
             var userdb = await Context.Users.FindAsync(id);

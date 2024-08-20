@@ -1,0 +1,71 @@
+﻿@page "/usuario/login"
+@using Digesett.Shared.DTO
+@using System.Text.Json
+@inject HttpClient httpClient
+@inject SweetAlertService Swal
+@inject NavigationManager navigator
+
+
+<h3>Login</h3>
+
+<div class="row mt-5">
+    <div class="col-md-4 offset-md-4">
+        <EditForm Model="login" OnValidSubmit="LoginUserAsync">
+            <DataAnnotationsValidator />
+            <div class="card bg-light">
+                <div class="card-header d-flex justify-content-center">
+                    <span>
+                        <i class="oi oiu-account-login"> Iniciar Sesión</i>
+                        <button class="btn btn-sm btn-primary float-end" type="submit">Iniciar Sesión</button>
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label>Email: </label>
+                        <div>
+                            <InputText class="form-control shadows" @bind-Value="@login.Email" />
+                            <ValidationMessage For="@(() => login.Email)" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label>Contraseña</label>
+                        <div>
+                            <InputText type="password" class="form-control" @bind-value="@login.Password" />
+                            <ValidationMessage For="@(() => login.Password)" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p><a class="btn btn-link" href="/ResendToken">Reenviar Correo de Activacion de Cuenta</a></p>
+                    <p><a class="btn btn-link" href="/RecoveryPassword">¿has olvidado la contraseña?</a></p>
+                </div>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    public LoginDTO login { get; set; } = new();
+
+    public async Task LoginUserAsync()
+    {
+        using (httpClient = new HttpClient())
+        {
+            var url = $"http://localhost:5002/api/users/loginusers/" + login.Email;        
+            try
+            {
+                var respuesta = await httpClient.PostAsJsonAsync<LoginDTO>(url, login);
+                var rptString = await respuesta.Content.ReadAsStringAsync();
+                var item = JsonSerializer.Deserialize<LoginDTO>(rptString, new JsonSerializerOptions()
+                {
+                    PropertyNameCaseInsensitive = true   
+                });
+            }
+            catch (HttpRequestException httpEx)
+            {
+                await Swal.FireAsync("Error", httpEx.Message, SweetAlertIcon.Error);
+            }
+        }
+        navigator.NavigateTo("/index");
+    }
+}

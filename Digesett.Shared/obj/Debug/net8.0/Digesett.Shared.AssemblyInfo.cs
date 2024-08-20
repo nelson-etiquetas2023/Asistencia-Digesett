@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digesett.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1abf62b60eb4155ca17ff16e2c18813de7fcf23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9304d4afde5f8eea0babde12e7730846456be7de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digesett.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digesett.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

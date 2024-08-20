@@ -1,5 +1,114 @@
 [
   {
+    "ContainingType": "Digesett.Server.Controllers.ActivoController",
+    "Method": "AddActivo",
+    "RelativePath": "api/Activo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "activo",
+        "Type": "Digesett.Shared.Models.ActivoFijo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Digesett.Server.Controllers.ActivoController",
+    "Method": "GetActivosFijosAll",
+    "RelativePath": "api/Activo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Digesett.Shared.Models.ActivoFijo, Digesett.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Digesett.Server.Controllers.ActivoController",
+    "Method": "GetActivoById",
+    "RelativePath": "api/Activo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Digesett.Shared.Models.ActivoFijo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Digesett.Server.Controllers.ActivoController",
+    "Method": "UpdateActivoFijos",
+    "RelativePath": "api/Activo/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "activo",
+        "Type": "Digesett.Shared.Models.ActivoFijo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Digesett.Shared.Models.ActivoFijo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Digesett.Server.Controllers.ActivoController",
+    "Method": "DeleteActivos",
+    "RelativePath": "api/Activo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Digesett.Server.Controllers.ContactsController",
     "Method": "GetAllContacts",
     "RelativePath": "api/Contacts",
@@ -236,5 +345,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Digesett.Server.Controllers.UsersController",
+    "Method": "LoginUsersAsync",
+    "RelativePath": "api/Users/LoginUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Digesett.Shared.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

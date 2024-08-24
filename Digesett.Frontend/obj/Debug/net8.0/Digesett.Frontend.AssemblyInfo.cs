@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digesett.Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9304d4afde5f8eea0babde12e7730846456be7de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8de81e26e56667a7d5cba15c56bd00ff159b0db1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digesett.Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digesett.Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

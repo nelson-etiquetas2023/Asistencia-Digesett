@@ -238,6 +238,28 @@
     ]
   },
   {
+    "ContainingType": "Digesett.Server.Controllers.EmployeeController",
+    "Method": "Post",
+    "RelativePath": "api/Employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employees",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Digesett.Shared.Models.Employee, Digesett.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Digesett.Server.Controllers.UsersController",
     "Method": "AddUsers",
     "RelativePath": "api/Users",
@@ -348,8 +370,8 @@
   },
   {
     "ContainingType": "Digesett.Server.Controllers.UsersController",
-    "Method": "LoginUsersAsync",
-    "RelativePath": "api/Users/LoginUser",
+    "Method": "LoginUsers",
+    "RelativePath": "Api/Users/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

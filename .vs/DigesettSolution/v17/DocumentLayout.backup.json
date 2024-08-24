@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.frontend\\pages\\activos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|solutionrelative:digesett.frontend\\pages\\activos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F60C44DA-50D5-462C-9527-F29B949F869A}|Digesett.Server\\Digesett.Server.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.server\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F60C44DA-50D5-462C-9527-F29B949F869A}|Digesett.Server\\Digesett.Server.csproj|solutionrelative:digesett.server\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.frontend\\pages\\contacts\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|solutionrelative:digesett.frontend\\pages\\contacts\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|e:\\programacion-etiquetas\\digesettsolution\\digesett.frontend\\pages\\components\\importexcel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A508E3D8-818E-481C-9609-3B0A3767B581}|Digesett.Frontend\\Digesett.Frontend.csproj|solutionrelative:digesett.frontend\\pages\\components\\importexcel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +18,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Server\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Digesett.Server\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Server\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Digesett.Server\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T18:55:14.525Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
@@ -34,16 +48,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.razor",
-              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Activos\\Index.razor",
-              "RelativeDocumentMoniker": "Digesett.Frontend\\Pages\\Activos\\Index.razor",
-              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Activos\\Index.razor",
-              "RelativeToolTip": "Digesett.Frontend\\Pages\\Activos\\Index.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ImportExcel.razor",
+              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Components\\ImportExcel.razor",
+              "RelativeDocumentMoniker": "Digesett.Frontend\\Pages\\Components\\ImportExcel.razor",
+              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Components\\ImportExcel.razor",
+              "RelativeToolTip": "Digesett.Frontend\\Pages\\Components\\ImportExcel.razor",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-20T21:02:32.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T16:25:48.843Z"
             }
           ]
         },
@@ -72,40 +85,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "176f8c49-9372-4c3e-8ee9-3d1e683d6101",
-        "Display": 1,
-        "X": 252,
-        "Y": 218,
-        "Width": 1494,
-        "Height": 593,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.razor",
-              "DocumentMoniker": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Contacts\\Index.razor",
-              "RelativeDocumentMoniker": "Digesett.Frontend\\Pages\\Contacts\\Index.razor",
-              "ToolTip": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\Pages\\Contacts\\Index.razor",
-              "RelativeToolTip": "Digesett.Frontend\\Pages\\Contacts\\Index.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-20T21:02:23.572Z",
-              "EditorCaption": ""
             }
           ]
         }

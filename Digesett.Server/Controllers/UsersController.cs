@@ -72,11 +72,11 @@ namespace Digesett.Server.Controllers
             return Ok(item);
         }
 
-        [HttpPost("LoginUser")]
-        public async Task<ActionResult<bool>> LoginUsersAsync([FromBody] LoginDTO login)
+        [HttpPost("/Api/Users/login")]
+        
+        public async Task<ActionResult<bool>> LoginUsers(LoginDTO login) 
         {
-            
-            var user = await Context.Users.FindAsync(login.Email);
+            var user = await Context.Users.Where(x => x.Email == login.Email).FirstOrDefaultAsync();
             if (user is not null)
             {
                 if (user.Password == login.Password)
@@ -90,7 +90,7 @@ namespace Digesett.Server.Controllers
             }
             else 
             {
-                return NotFound("user no registrado...");
+                return false;
             }
         }
     }

@@ -77,6 +77,10 @@
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.1, )"
             }
           },
           "imports": [

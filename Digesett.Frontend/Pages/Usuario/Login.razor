@@ -6,66 +6,91 @@
 @inject NavigationManager navigator
 
 
-<h3>Login</h3>
-
-<div class="row mt-5">
-    <div class="col-md-4 offset-md-4">
-        <EditForm Model="login" OnValidSubmit="LoginUserAsync">
-            <DataAnnotationsValidator />
-            <div class="card bg-light">
-                <div class="card-header d-flex justify-content-center">
-                    <span>
-                        <i class="oi oiu-account-login"> Iniciar Sesión</i>
-                        <button class="btn btn-sm btn-primary float-end" type="submit">Iniciar Sesión</button>
-                    </span>
-                </div>
-                <div class="card-body">
-                    <div class="mb-3">
-                        <label>Email: </label>
-                        <div>
-                            <InputText class="form-control shadows" @bind-Value="@login.Email" />
-                            <ValidationMessage For="@(() => login.Email)" />
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label>Contraseña</label>
-                        <div>
-                            <InputText type="password" class="form-control" @bind-value="@login.Password" />
-                            <ValidationMessage For="@(() => login.Password)" />
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <p><a class="btn btn-link" href="/ResendToken">Reenviar Correo de Activacion de Cuenta</a></p>
-                    <p><a class="btn btn-link" href="/RecoveryPassword">¿has olvidado la contraseña?</a></p>
-                </div>
+<div class="row mt-5 d-flex justify-content-center align-items-center">
+    <div class="col-md-6" >
+        <div class="card bg-light shadow" style="width:500px;">
+            <div class="card-header justify-content-center">
+                <p class="lead fw-bold d-flex justify-content-center">Iniciar Sesion</p>
             </div>
-        </EditForm>
+            <div class="card-body py-5">
+                <EditForm Model="@loginDTO" OnValidSubmit="@validForm">
+                    <DataAnnotationsValidator />
+                    <div class="form-group mb-3">
+                        <label class="fw-bold">E-mail: </label>
+                        <InputText class="form-control shadow" @bind-Value="@loginDTO.Email" />
+                        <ValidationMessage For="@(() => loginDTO.Email)" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold">Password: </label>
+                        <InputText class="form-control shadow" type="password" @bind-Value="@loginDTO.Password" />
+                        <ValidationMessage For="@(() => loginDTO.Password)" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                       
+                        <button type="submit" class="btn btn-primary shadow mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8m4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5" />
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg> Iniciar Sesion
+                        </button>
+                    </div>
+                    
+                </EditForm>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="row ms-1" hidden>Crer Cuenta</a>
+                <a href="#" class="row ms-1">¿Olvido su contraseña?</a>
+            </div>
+        </div>
     </div>
 </div>
 
 @code {
-    public LoginDTO login { get; set; } = new();
+    public LoginDTO loginDTO { get; set; } = null!;
 
-    public async Task LoginUserAsync()
+
+    protected override void OnInitialized()
+    {
+        loginDTO = new LoginDTO() { Email="",Password=""};
+    }
+
+
+    public async Task validForm (EditContext editcontext)
+    {
+        await loginUsers();
+    }
+
+    public async Task loginUsers()
     {
         using (httpClient = new HttpClient())
         {
-            var url = $"http://localhost:5002/api/users/loginusers/" + login.Email;        
+            var url = $"http://localhost:5002/api/users/login";
             try
             {
-                var respuesta = await httpClient.PostAsJsonAsync<LoginDTO>(url, login);
+                var respuesta = await httpClient.PostAsJsonAsync<LoginDTO>(url, loginDTO);
                 var rptString = await respuesta.Content.ReadAsStringAsync();
-                var item = JsonSerializer.Deserialize<LoginDTO>(rptString, new JsonSerializerOptions()
+                var checklogin = JsonSerializer.Deserialize<Boolean>(rptString, new JsonSerializerOptions()
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+
+                if (checklogin)
                 {
-                    PropertyNameCaseInsensitive = true   
-                });
+                    await Swal.FireAsync("Login", "Bienvenido, sus datos son correctos.", SweetAlertIcon.Info);
+                    navigator.NavigateTo("/");
+                }
+                else
+                {
+                    await Swal.FireAsync("Error", "Error de credenciales...", SweetAlertIcon.Info);
+                }
             }
             catch (HttpRequestException httpEx)
             {
                 await Swal.FireAsync("Error", httpEx.Message, SweetAlertIcon.Error);
             }
         }
-        navigator.NavigateTo("/index");
+       
+    
     }
+
 }

@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNpc3RlbmNpYVxJbmRleC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Components/ImportExcel.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xJbXBvcnRFeGNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcQ3JlYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

@@ -260,6 +260,22 @@
     ]
   },
   {
+    "ContainingType": "Digesett.Server.Controllers.EmployeeController",
+    "Method": "LoadDepartamentAsync",
+    "RelativePath": "api/excel/loadDepartament",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departs",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Digesett.Shared.Models.Departament, Digesett.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Digesett.Server.Controllers.UsersController",
     "Method": "AddUsers",
     "RelativePath": "api/Users",

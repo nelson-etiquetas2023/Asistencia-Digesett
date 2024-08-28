@@ -4,55 +4,68 @@
 @inject SweetAlertService Swal
 @inject NavigationManager navigator
 
-<h3>Crear Usuarios</h3>
+<h1>Crear Usuarios</h1>
 
 <div class="row">
     <div class="col-6">
-        <div class="form-group mb-3">
-            <label class="fw-bold">Nombre de Usuario:</label>
-            <input type="text" @bind-value="user.Name" class="form-control shadow" placeholder="Introduzca el nombre del usuario" id="name" />
-        </div>
-        <div class="form-group mb-3">
-            <label class="fw-bold">Correo</label>
-            <input type="email" @bind-value="user.Email" class="form-control shadow" placeholder="Introduzca el correo electronico" id="email" />
-        </div>
-        <div class="form-group mb-3">
-            <label class="fw-bold">Contraseña:</label>
-            <input type="password" @bind-value="user.Password" class="form-control shadow" placeholder="Introduzca a contraseña del usuario" id="password"  />
-        </div>
-        <div class="form-group mb-3">
-            <label class="fw-bold">Departamento:</label>
-            <InputSelect class="form-select shadow" @bind-Value="user.Departament">
-                <option value="" selected>Seleccione un departamento</option>
-                @foreach (var item in departaments)
-                {
-                    <option value="@item.Name">@item.Name</option>
-                }
-            </InputSelect>
-        </div>
-        <div class="form-group mb-3">
-            <label class="fw-bold">Cargo:</label>
-            <input type="text" @bind-value="user.Cargo"  class="form-control shadow" placeholder="Introduzca el cargo de trabajo" id="cargo" />
-        </div>
-        <div class="form-group mb-3">
-            <InputSelect class="form-select shadow" @bind-Value="user.TypeUser">
-                <option value="" selected>Seleccione el Tipo de Usuario</option>
-                @foreach (var item in TiposUsuario)
+
+        <EditForm Model="@user" OnValidSubmit="@SaveUsers" FormName="formUsers">
+            <DataAnnotationsValidator></DataAnnotationsValidator>
+            <ValidationSummary></ValidationSummary>
+
+            <div class="form-group mb-3">
+                <label class="fw-bold">Nombre de Usuario:</label>
+                <input type="text" @bind-value="user.Name" class="form-control shadow" placeholder="Introduzca el nombre del usuario" id="name" />
+                <ValidationMessage For="@(() => user.Name)"></ValidationMessage>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Correo</label>
+                <input type="email" @bind-value="user.Email" class="form-control shadow" placeholder="Introduzca el correo electronico" id="email" />
+                <ValidationMessage For="@(() => user.Email)"></ValidationMessage>
+
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Contraseña:</label>
+                <input type="password" @bind-value="user.Password" class="form-control shadow" placeholder="Introduzca a contraseña del usuario" id="password" />
+                <ValidationMessage For="@(() => user.Password)"></ValidationMessage>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Departamento:</label>
+                <InputSelect class="form-select shadow" @bind-Value="user.Departament">
+                    <option value="" selected>Seleccione un departamento</option>
+                    @foreach (var item in departaments)
                     {
                         <option value="@item.Name">@item.Name</option>
                     }
-            </InputSelect>
-        </div>
-        <div class="form-group mb-3">
-            <label class="fw-bold">Telefono:</label>
-            <input type="text" @bind-value="user.Phone" class="form-control shadow" placeholder="Introduzca el numero telefonico" id="telefono" />
-        </div>
-        <div class="row mt-5" style="display:flex;align-content:center;align-items:center;">
-            <div class="col-6">         
-                <button class="btn btn-primary me-2 shadow" @onclick="SaveUsers">Guardar</button>
-                <a href="#" class="btn btn-warning shadow">Salir</a>
+                </InputSelect>
+                <ValidationMessage For="@(() => user.Departament)"></ValidationMessage>
             </div>
-        </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Cargo:</label>
+                <input type="text" @bind-value="user.Cargo" class="form-control shadow" placeholder="Introduzca el cargo de trabajo" id="cargo" />
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Tipo de Usuario:</label>
+                <InputSelect class="form-select shadow" @bind-Value="user.TypeUser">
+                    <option value="" selected>Seleccione el Tipo de Usuario</option>
+                    @foreach (var item in TiposUsuario)
+                    {
+                        <option value="@item.Name">@item.Name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="@(() => user.TypeUser)"></ValidationMessage>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Telefono:</label>
+                <input type="text" @bind-value="user.Phone" class="form-control shadow" placeholder="Introduzca el numero telefonico" id="telefono" />
+            </div>
+            <div class="row mt-5" style="display:flex;align-content:center;align-items:center;">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary me-2 shadow">Guardar</button>
+                    <a href="../usuario/index" class="btn btn-warning shadow">Salir</a>
+                </div>
+            </div>
+        </EditForm>
     </div>
 </div>
 
@@ -60,18 +73,13 @@
 @code {
 
     public User user { get; set; } = new();
+    public List<Departament> departaments = new();
+    public List<TypeUser> TiposUsuario = new();
 
-    public List<Departament> departaments = new(){
-            new Departament(){ IdDepartament=1,Name="Sistemas"},
-            new Departament(){ IdDepartament=2,Name="Recursos Humanos"},
-            new Departament(){ IdDepartament=3,Name="Gerencia"}
-        };
-    public List<TypeUser> TiposUsuario = new(){
-            new TypeUser(){ Id=1,Name="Super Admin"},
-            new TypeUser(){ Id=2,Name="Admin"},
-            new TypeUser(){ Id=3,Name="User"},
-            new TypeUser(){ Id=4,Name="Invitado"}
-        };
+    protected override void OnInitialized()
+    {
+        LoadDataComboBox();
+    }
 
     public async Task SaveUsers()
     {

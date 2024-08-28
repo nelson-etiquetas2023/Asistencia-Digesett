@@ -1,68 +1,70 @@
 ﻿@page "/usuario/index"
 @using Digesett.Shared.Models
 @using System.Text.Json
+@using OfficeOpenXml
 @inject HttpClient httpClient
 @inject IJSRuntime JS 
+@inject SweetAlertService Swal
 @implements IAsyncDisposable
 
+
 <h5 class="fw-bold mb-2">Gestión de Usuarios</h5>
-
-<div class="row mb-2">
-    <div class="col-6">
-        <a href="/usuario/create" class="btn btn-primary">Nuevo Usuario</a>   
-    </div>  
-</div>
-
+<nav class="navbar navbar-light bg-light mb-3 d-flex justify-content-start">
+    <a href="/usuario/create" class="btn btn-primary me-2">Usuario Nuevo</a>
+    <button class="btn btn-success" @onclick="ExportExcel">Exportar Excel</button>
+</nav>
 
 @if(Users is null)
 {
-    <p>loading...</p>
+    <p class="fw-bold">loading...</p>
 }
 else 
 {
-    <table class="table table-bordered table-striped shadow table-sm" id="TableUsers">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Usuario</th>
-                <th>Correo</th>
-                <th>Tipo</th>
-                <th>Dpto.</th>
-                <th>Cargo</th>
-                <th>Telefono</th>
-                <th>Status</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Users)
-            {
+    
+        <table class="table table-striped shadow" id="TableUsers">
+            <thead>
                 <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Name</td>
-                    <td>@item.Email</td>
-                    <td>@item.TypeUser</td>
-                    <td>@item.Departament</td>
-                    <td>@item.Cargo</td>
-                    <td>@item.Phone</td>
-                    <td>@(item.Active ? "Activo" : "Desactivado")</td>
-                    <td>
-                        <a href="/usuario/update/@item.Id" class="me-2" style="text-decoration:none;" tabindex="0" data-toggle="tooltip" title="Editar Usuario">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                            </svg>
-                        </a>
-                        <a href="/usuario/delete/@item.Id" tabindex="0" data-toggle="tooltip" title="Eliminar Usuario">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
-                            </svg>
-                        </a>
-                    </td>
+                    <th>Id</th>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Tipo</th>
+                    <th>Dpto.</th>
+                    <th>Cargo</th>
+                    <th>Telefono</th>
+                    <th>Status</th>
+                    <th>Acciones</th>
                 </tr>
-            }
-        </tbody>
-</table>
+            </thead>
+            <tbody>
+                @foreach (var item in Users)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.TypeUser</td>
+                        <td>@item.Departament</td>
+                        <td>@item.Cargo</td>
+                        <td>@item.Phone</td>
+                        <td>@(item.Active ? "Activo" : "Desactivado")</td>
+                        <td>
+                            <a href="/usuario/update/@item.Id" class="me-2" style="text-decoration:none;" tabindex="0" data-toggle="tooltip" title="Editar Usuario">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                                </svg>
+                            </a>
+                            <a href="/usuario/delete/@item.Id" tabindex="0" data-toggle="tooltip" title="Eliminar Usuario">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    
 }
 
 @code {
@@ -74,6 +76,24 @@ else
         Users = await LoadData();
         await JS.InvokeAsync<object>("DataTableLoad", "#TableUsers");
     }
+
+
+
+
+
+
+    private async Task ExportExcel()
+    {
+        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+        using (var pack = new ExcelPackage())
+        {
+            var ws = pack.Workbook.Worksheets.Add("Mysheet");
+            ws.Cells["A1"].Value = "this is cell A1";
+            await pack.SaveAsAsync(@"c:\test.xlsx");
+         }
+    }
+
 
     private async Task<List<User>> LoadData()
     {

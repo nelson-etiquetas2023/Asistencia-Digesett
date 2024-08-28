@@ -191,4 +191,50 @@ else
 
     }
     //fin de la funcion para importar excel.
+
+
+
+
+
+
+
+    public void WriteExcel()
+    {
+
+
+        DataTable table = (DataTable)JsonSerializer.Deserialize(JsonSerializer.Serialize(empleados), (typeof(DataTable)));
+
+
+        var memoryStream = new MemoryStream();
+        using (var fs = new FileStream("Result.xlsx",FileMode.Create, FileAccess.Write))
+        {
+            IWorkbook workbook = new XSSFWorkbook();
+            ISheet excelSheet = workbook.CreateSheet("sheet1");
+
+            List<string> columns = new List<string>();
+            IRow row = excelSheet.CreateRow(0);
+            int columnIndex = 0;
+
+            foreach (DataColumn column in table.Columns)
+            {
+                columns.Add(column.ColumnName);
+                row.CreateCell(columnIndex).SetCellValue(column.ColumnName);
+                columnIndex++;
+            }
+            int rowIndex = 1;
+            foreach (DataRow dsrow in table.Rows)
+            {
+                row = excelSheet.CreateRow(rowIndex);
+                int cellIndex = 0;
+                foreach (String col in columns)
+                {
+                    row.CreateCell(cellIndex).SetCellValue(dsrow[col].ToString());
+                    cellIndex++;
+                }
+
+                rowIndex++;
+            }
+            workbook.Write(fs);
+        }
+    }
 }

@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xJbXBvcnRFeGNlbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Components/LoadingIndicator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xMb2FkaW5nSW5kaWNhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/PROGRAMACION-ETIQUETAS/DigesettSolution/Digesett.Frontend/Pages/Contacts/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdHNcQ3JlYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

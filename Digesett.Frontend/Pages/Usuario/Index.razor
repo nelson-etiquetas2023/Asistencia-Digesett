@@ -1,11 +1,14 @@
 ﻿@page "/usuario/index"
 @using Digesett.Shared.Models
+@using Digesett.Frontend.Pages.Components
 @using System.Text.Json
 @using OfficeOpenXml
+@using System.Diagnostics
 @inject HttpClient httpClient
 @inject IJSRuntime JS 
 @inject SweetAlertService Swal
 @implements IAsyncDisposable
+
 
 
 <h5 class="fw-bold mb-2">Gestión de Usuarios</h5>
@@ -14,9 +17,10 @@
     <button class="btn btn-success" @onclick="ExportExcel">Exportar Excel</button>
 </nav>
 
-@if(Users is null)
+@if(isLoading)
 {
-    <p class="fw-bold">loading...</p>
+   
+    <LoadingIndicator />
 }
 else 
 {
@@ -68,7 +72,9 @@ else
 }
 
 @code {
-    public List<User>? Users;
+    public bool isLoading;
+    public List<User> Users = new();
+    TimeSpan timeQuery;
 
 
     protected override async Task OnInitializedAsync()
@@ -76,11 +82,6 @@ else
         Users = await LoadData();
         await JS.InvokeAsync<object>("DataTableLoad", "#TableUsers");
     }
-
-
-
-
-
 
     private async Task ExportExcel()
     {
@@ -91,12 +92,14 @@ else
             var ws = pack.Workbook.Worksheets.Add("Mysheet");
             ws.Cells["A1"].Value = "this is cell A1";
             await pack.SaveAsAsync(@"c:\test.xlsx");
-         }
+        }
     }
 
 
     private async Task<List<User>> LoadData()
     {
+        isLoading = true;
+        var watch = Stopwatch.StartNew();
         var url = $"http://localhost:5002/api/users";    
         using(httpClient = new HttpClient())
         {
@@ -104,6 +107,9 @@ else
             var rptString = await respuesta.Content.ReadAsStringAsync();
             var lista = JsonSerializer.Deserialize<List<User>>(rptString, new JsonSerializerOptions()
             {PropertyNameCaseInsensitive = true});
+            watch.Stop();
+            timeQuery = watch.Elapsed;
+            isLoading = false;
             if (lista is not null)
             {
                 return lista;
@@ -113,6 +119,7 @@ else
                 return new List<User>();    
             }
         }
+        
     }
 
     public async ValueTask DisposeAsync()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Ab1zcLDHiVn6dQdEv5nUtQbFCKIbro2IwWr+y65cQE=",
+  "Hash": "P54cYVGgeNK1pY1ol+7TJAbA6aT8IlNCQ/1IuStpXNA=",
   "Source": "Digesett.Frontend",
   "BasePath": "/",
   "Mode": "Root",
@@ -718,6 +718,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\webcil\\BouncyCastle.Cryptography.wasm"
+    },
+    {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\CsvHelper.wasm",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/CsvHelper.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\webcil\\CsvHelper.wasm"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\CurrieTechnologies.Razor.SweetAlert2.wasm",
@@ -5185,6 +5204,25 @@
       "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.wasm"
     },
     {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\0mkdm6xjwe.gz",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/CsvHelper.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\CsvHelper.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\bin\\Debug\\net8.0\\wwwroot\\_framework\\CsvHelper.wasm"
+    },
+    {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\obj\\Debug\\net8.0\\compressed\\0za6azp8ja.gz",
       "SourceId": "Digesett.Frontend",
       "SourceType": "Computed",
@@ -9553,6 +9591,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\wwwroot\\js\\Utilidades.js",
+      "SourceId": "Digesett.Frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/Utilidades.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Utilidades.js"
     },
     {
       "Identity": "E:\\PROGRAMACION-ETIQUETAS\\DigesettSolution\\Digesett.Frontend\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.svg",

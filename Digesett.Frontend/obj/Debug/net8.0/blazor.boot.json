@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Digesett.Frontend",
   "resources": {
-    "hash": "sha256-6c7NQFM/IKneuWBIi1q/5Mg8itfxkbC96XzmB4lg6cU=",
+    "hash": "sha256-1VnppPHBv2fkH9DnJ9oLlUKVBYBC9xSrijly59UOjGo=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.gb8ukpdi7w.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -18,6 +18,7 @@
     },
     "assembly": {
       "BouncyCastle.Cryptography.wasm": "sha256-bFbPi1kQzDRlI3dCGV+6NzyGhP4jeO/ZVotERjt4wrw=",
+      "CsvHelper.wasm": "sha256-BXz5RCSFBrg3KCDZD4lxgyWmw1YH6vUT0N/oIQdCKfA=",
       "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Enums.NET.wasm": "sha256-pzL+j6B+0G6CnbVAo8dMnTeNxQqDDE6ubZNVym2/P7M=",
       "EPPlus.wasm": "sha256-wsfZ5X46CSm6KlQ5PktXM1scO6aM7nTrafC6wN2UQjI=",
@@ -233,11 +234,11 @@
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
       "Digesett.Shared.wasm": "sha256-Ai6UfMTNdyKw6yOodYdMc1FdZrYOCvGV4ZwmxUQh6nc=",
-      "Digesett.Frontend.wasm": "sha256-lVrc1LFh5ZLC4gY/MIIQU0uc9QP04YpkYuw/rhJhpwQ="
+      "Digesett.Frontend.wasm": "sha256-wykQplUef46ea1YKfnEJOOMF3vBzQkfi9GH7KEgmETw="
     },
     "pdb": {
       "Digesett.Shared.pdb": "sha256-buJoz46XFo6qEJ/v7m+eIbfkZctBC19YBx80DO3Lmr0=",
-      "Digesett.Frontend.pdb": "sha256-5jwDS7bihd5J1TLY4uAOBSznOvhlDeyE5CHa/Fezhus="
+      "Digesett.Frontend.pdb": "sha256-bgBcCiQGq5zSzbLL/QZx2+xFkPYAMfF/ZRyt4RuSKsI="
     }
   },
   "cacheBootResources": true,

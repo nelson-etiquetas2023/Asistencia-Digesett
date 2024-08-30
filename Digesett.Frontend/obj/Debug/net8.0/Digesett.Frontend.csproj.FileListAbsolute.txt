@@ -1160,3 +1160,8 @@ E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\we
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\9c7w0c4dbe.gz
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\0exissej47.gz
 E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\a3ap4lwg1h.gz
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\CsvHelper.wasm
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\wwwroot\_framework\CsvHelper.wasm.gz
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\bin\Debug\net8.0\CsvHelper.dll
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\webcil\CsvHelper.wasm
+E:\PROGRAMACION-ETIQUETAS\DigesettSolution\Digesett.Frontend\obj\Debug\net8.0\compressed\0mkdm6xjwe.gz

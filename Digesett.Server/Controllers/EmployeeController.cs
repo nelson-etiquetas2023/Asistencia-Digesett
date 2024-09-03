@@ -16,7 +16,7 @@ namespace Digesett.Server.Controllers
     {
         readonly List<Employee> lista = [];
         private readonly string strconn= "Data Source=SERVER-ETIQUETA; Initial Catalog=DigesettNomina;User Id=Npino;Password=Jossycar5%;TrustServerCertificate=True;";
-        private readonly string strconn2 = "Data Source=SERVER-ETIQUETA; Initial Catalog=BDBioAdminSQL;User Id=Npino;Password=Jossycar5%;TrustServerCertificate=True;";
+        private readonly string strconn2 = "Data Source=192.168.10.13,63520; Initial Catalog=BDBioAdminSQL;User Id=Npino;Password=Jossycar5%;TrustServerCertificate=True;";
         public string errorConn = "";
         public bool errorStatus = false;
 

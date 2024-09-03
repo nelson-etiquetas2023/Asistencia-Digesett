@@ -7,6 +7,7 @@
 @using CsvHelper
 @using CsvHelper.Configuration
 @using CsvHelper.Configuration.Attributes
+@using ClosedXML.Excel
 @using System.Globalization
 @inject HttpClient httpClient
 @inject IJSRuntime JS 
@@ -108,8 +109,54 @@ else
         await JS.InvokeAsync<object>("saveAsFile", "UsersDigesett.csv",Convert.ToBase64String(arr));
     }
 
-    private void ExportExcel()
+    async Task ExportExcel()
     {
+        using (var workbook = new XLWorkbook())
+        {
+            var propertyNames = typeof(User).GetProperties().Select(p => p.Name).ToList();
+
+            var sheet = workbook.Worksheets.Add("usuarios");
+
+            //escribo los encabezados.
+            for (int i = 0; i < propertyNames.Count; i++)
+            {
+                sheet.Cell(1, i + 1).Value = propertyNames[i];
+                sheet.Cell(1, i + 1).Style.Font.SetBold();
+
+            }
+            sheet.Column(1).Width = 5;
+            sheet.Column(2).Width = 35;
+            sheet.Column(3).Width = 35;
+            sheet.Column(4).Width = 20;
+            sheet.Column(5).Width = 20;
+            sheet.Column(6).Width = 20;
+            sheet.Column(7).Width = 20;
+            sheet.Column(8).Width = 20;
+            // escribo las filas.
+            var rowData = Users.ToList();
+            for (int rowIndex = 0; rowIndex < rowData.Count; rowIndex++)
+            {
+                for (int colIndex = 0; colIndex < propertyNames.Count; colIndex++)
+                {
+                    var propertyName = propertyNames[colIndex];
+                    var propertyValue = typeof(User).GetProperty(propertyName)?.GetValue(rowData[rowIndex])?.ToString();
+                    sheet.Cell(rowIndex + 2, colIndex + 1).Value = propertyValue;
+                }
+            }
+            using (var stream = new MemoryStream())
+            {
+                workbook.SaveAs(stream);
+                await JS.InvokeAsync<object>("saveExcel", "usuarios.xlsx", stream.ToArray());
+            }
+        }
+        
+        
+        
+
+
+
+        
+        
     }
 
     private async Task<List<User>> LoadData()

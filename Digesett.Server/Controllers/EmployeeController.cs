@@ -1,12 +1,7 @@
 ﻿using Digesett.Shared.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Data.SqlClient;
-using System.Collections.Generic;
-using System;
 using System.Data;
-
 
 namespace Digesett.Server.Controllers
 {

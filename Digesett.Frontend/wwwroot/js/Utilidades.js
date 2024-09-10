@@ -20,3 +20,53 @@ window.saveExcel = function (filename, data) {
     window.URL.revokeObjectURL(url);
 
 };
+
+
+function DataTableInitPonches(table, jsonData) {
+    DataTableLoad(table)
+}
+
+
+
+
+function DataTableLoad(table) {
+    $(function () {
+        $(table).DataTable({
+            language: {
+                "decimal": "",
+                "emptyTable": "No hay información",
+                "info": "Mostrando _START_-_END_ (_TOTAL_ Filas)",
+                "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "Mostrar _MENU_ Entradas",
+                "loadingRecords": "Cargando...",
+                "processing": "Procesando...",
+                "search": "Buscar Por:",
+                "zeroRecords": "Sin resultados encontrados",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Ultimo",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                }
+            },
+            pageLength: 10,
+            destroy: true,
+            lengthMenu: [5,10,20,30,40,50]
+        });
+    });
+    
+}
+function DataTableUnload(table) {
+    
+    $(table).DataTable().destroy();
+   
+}
+
+function DataTableRepaint(table,jsonData)
+{ 
+    $(table + '_wrapper').remove();
+    DataTableLoad(table);
+};  
